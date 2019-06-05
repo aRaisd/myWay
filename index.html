@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Customers App</title>
+	<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
+	<!-- <link type="text/css" href="./styles/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./styles/paper.css" rel="stylesheet">
+	<link href="./styles/bootstrap-additions/dist/bootstrap-additions.min.css" rel="stylesheet">
+	<link href="./styles/angularjs-toaster/toaster.min.css" rel="stylesheet">
+	<link href="./styles/ladda/dist/ladda-themeless.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+	<!-- <link href="../libs/font-awesome/css/font-awesome.min.css"
+					rel="stylesheet" > -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="./styles/animations.css" rel="stylesheet" type="text/css">
+	<link href="./styles/styles.css" rel="stylesheet" type="text/css"> -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<base	href="/">
+</head>
+
+<body>
+	<!-- <header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#/">Customers Application
+					</a>
+				</div>
+				<div class="nav navbar-nav">
+					<li><a href="#/customers">Customers</a></li>
+					<li><a href="#/orders">Orders</a></li>
+				</div>
+			</div>
+			</div>
+
+	</header>
+
+	<main>
+		<div ng-view class="slide-animation"></div>
+	</main> -->
+
+	<div ng-app="customersApp">
+		<navbar></navbar>
+
+		<div class="container">
+			<ui-view></ui-view>
+		</div>
+	</div>
+
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+	<script src="node_modules/auth0-js/build/auth0.js"></script>
+	<script src="node_modules/angular-auth0/dist/angular-auth0.js"></script>
+
+	<!-- <script src="./scripts/angular-animate.js"></script> -->
+
+	<script src="./app/app.js"></script>
+	<script src="./app/app.run.js"></script>
+	<script src="./app/navbar/navbar.directive.js"></script>
+	<script src="./app/home/home.controller.js"></script>
+	<script src="./app/callback/callback.cntrlr.js"></script>
+
+	<!-- <script src="./app/services/customersFactory.js"></script>
+	<script src="./app/services/values.js"></script>
+	<script src="./app/controllers/customersController.js"></script>
+	<script src="./app/controllers/ordersController.js"></script>
+	<script src="./app/controllers/allOrdersController.js"></script> -->
+</body>
+
+</html>
